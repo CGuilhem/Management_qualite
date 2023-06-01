@@ -10,4 +10,6 @@ RUN pnpm install --prod
 
 COPY . .
 
+EXPOSE 8080
+
 CMD [ "pnpm", "serve" ]
