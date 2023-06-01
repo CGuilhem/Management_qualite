@@ -18,6 +18,6 @@ For production mode
 
 Run the test cases.
 
-## Learn More
+## Learn More :
 
 To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/docs/latest/).
