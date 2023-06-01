@@ -13,11 +13,16 @@
 <body>
     <div class="main">
         <h1>🙎Liste des clients</h1>
-        <input type="text" placeholder="Filtrer par nom, prénom..." class="inputResearch" id="searchInput" onkeydown="filterUserList()" onkeyup="filterUserList()"/>
+        <div class="divInput">
+            <input type="text" placeholder="Filtrer par nom, prénom..." class="inputResearch" id="searchInput" onkeydown="filterUserList()" onkeyup="filterUserList()"/>
+            <p class="btnAdd"><span>+ </span>Ajouter</p>
+        </div>
         <p><span id="res"></span></p>
         <ul class="userList">
             
         </ul>
+            
+    </div>
     </div>
     <div class="banner">
         <div class="userDetail" id="userDetail">
@@ -33,6 +38,10 @@
                 <p>Adresse : <span id="detailAdress"></span></p>
                 <p>CP : <span id="detailZipCode"></span></p>
                 <p>Ville : <span id="detailCity"></span></p>
+            </div>
+            <div class="detailFooter">
+                <button id="btnUpdate">Modifier</button>
+                <button id="btnDelete">Supprimer</button>
             </div>
         </div>
         <p class="credits">Réalisé par Guilhem, Thomas & Alexandre</p>

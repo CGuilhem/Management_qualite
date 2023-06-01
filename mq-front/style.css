@@ -20,10 +20,31 @@ h1 {
   margin-right: auto;
 }
 
+.divInput {
+  display: flex;
+  align-items: center;
+}
+
 .inputResearch {
   margin-left: 8%;
   height: 1.5rem;
-  width: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.btnAdd {
+  margin-left: 8%;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.btnAdd span {
+  color: #cb68e3;
+}
+.btnAdd:hover {
+  text-decoration: underline;
 }
 
 /* User */
@@ -64,6 +85,7 @@ h1 {
 
 /* User Detail */
 .userDetail {
+  display: none;
   background-color: white;
   border-radius: 1rem;
   height: 70%;
@@ -92,6 +114,37 @@ h1 {
 #detailImg {
   width: 8rem;
   height: 8rem;
+}
+
+.detailFooter {
+  margin-top: 20%;
+  display: flex;
+  gap: 2%;
+}
+.detailFooter button {
+  padding: 0.5rem 2rem;
+}
+
+#btnUpdate {
+  background-color: #cb68e3;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#btnUpdate:hover {
+  background-color: #8b4a9b;
+}
+
+#btnDelete {
+  background-color: white;
+  color: rgb(219, 48, 48);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#btnDelete:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 900px) {

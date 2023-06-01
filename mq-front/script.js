@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         userItem.appendChild(userContainer);
         userList.appendChild(userItem);
     });
-    document.getElementById('userDetail').style.display = 'none';
    // Parcours de tous les éléments avec la classe 'userItem'
   Array.from(userList.children).forEach(userItem => {
     userItem.addEventListener('click', () => {
