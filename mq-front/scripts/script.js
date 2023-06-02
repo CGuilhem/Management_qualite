@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         userItem.appendChild(userContainer);
         userList.appendChild(userItem);
     });
-    document.getElementById('userDetail').style.display = 'none';
    // Parcours de tous les éléments avec la classe 'userItem'
   Array.from(userList.children).forEach(userItem => {
     userItem.addEventListener('click', () => {
@@ -111,4 +110,15 @@ function changeResNumber() {
   if (nbRes > 0) {
     stringRes.innerHTML = nbRes.toString() + " résultats";
   }
+}
+
+
+function openPopup() {
+  window.open('./templates/popup.html', 'Ajouter un utilisateur', 'width=500,height=400');
+}
+
+function popUpdate() {
+  openPopup();
+  const popTitle = document.querySelector('.popup .popTitle');
+  popTitle.textContent = 'Modifier';
 }
