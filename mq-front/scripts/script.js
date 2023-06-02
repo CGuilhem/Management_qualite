@@ -121,4 +121,8 @@ function popUpdate() {
   openPopup();
   const popTitle = document.querySelector('.popup .popTitle');
   popTitle.textContent = 'Modifier';
+
+  const confirmBtn = document.querySelector('.popup .confirmBtn');
+  confirmBtn.textContent = 'Modifier';
+  confirmBtn.setAttribute('onclick', 'updateUser()');
 }
