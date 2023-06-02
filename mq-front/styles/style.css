@@ -69,7 +69,7 @@ h1 {
   justify-content: space-evenly;
 }
 .picture {
-  background: url("./imgs/default-user-image.png");
+  background: url("../imgs/default-user-image.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
