@@ -2,27 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Pre-Build') {
+
+        stage('Code Analysis') {
             steps {
-                echo 'Pre-Build...'
-                echo 'Send status Pre-Build to Mail, Telegram, Slack...'
-            }
-        }
-        stage('Build') {
-            steps {
-                echo 'Building...'
-                echo 'Running docker build...'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Push') {
-            steps {
-                echo 'Pushing...'
-                echo 'Running docker push...'
+                withSonarQubeEnv(installationName: 'SonarQube') {
+                    sh 'mvn sonar:sonar'
+                }
             }
         }
     }
