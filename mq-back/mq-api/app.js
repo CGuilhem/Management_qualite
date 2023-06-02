@@ -69,6 +69,8 @@ module.exports = async function (fastify, opts) {
   fastify.register(require('@fastify/cors'), {
     // put your options here
     origin: '*',
+    methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   })
 
   // Executes Swagger
